@@ -27,6 +27,10 @@ $(function() {
         window.location.href ='/';
         alert("Hey, I think you broke something. I'm bringing you back to the homepage.");
     });
+
+    socket.on('allPlayersReady', function(){
+        window.location.href = '/playGame'
+    });
     
 });
 
